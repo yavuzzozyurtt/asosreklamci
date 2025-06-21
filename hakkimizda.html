@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Hakkımızda</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet" />
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Poppins', sans-serif;
+      background: linear-gradient(270deg, #0f2027, #203a43, #2c5364);
+      background-size: 600% 600%;
+      animation: gradientBG 20s ease infinite;
+      color: white;
+      line-height: 1.6;
+      padding: 40px 20px 0;
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+    }
+
+    @keyframes gradientBG {
+      0% { background-position: 0% 50%; }
+      50% { background-position: 100% 50%; }
+      100% { background-position: 0% 50%; }
+    }
+
+    .container {
+      max-width: 1000px;
+      margin: auto;
+      text-align: center;
+      z-index: 1;
+    }
+
+    h1 {
+      font-size: 3rem;
+      margin-bottom: 20px;
+      color: #FFD700;
+      letter-spacing: 2px;
+    }
+
+    p {
+      font-size: 1.1rem;
+      margin-bottom: 25px;
+      opacity: 0.9;
+    }
+
+    .highlight {
+      color: #00c3ff;
+      font-weight: 600;
+    }
+
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 30px;
+      margin-top: 50px;
+    }
+
+    .card {
+      background-color: rgba(255, 255, 255, 0.05);
+      padding: 25px;
+      border-radius: 15px;
+      backdrop-filter: blur(10px);
+      transition: transform 0.3s ease;
+      border: 1px solid rgba(255,255,255,0.1);
+    }
+
+    .card:hover {
+      transform: scale(1.03);
+    }
+
+    .card h3 {
+      color: #FFD700;
+      margin-bottom: 10px;
+    }
+
+    .card p {
+      font-size: 0.95rem;
+    }
+
+    /* FOOTER */
+    footer {
+      background: rgba(0,0,0,0.4);
+      padding: 30px 20px;
+      text-align: center;
+      margin-top: auto;
+      border-top: 1px solid rgba(255, 255, 255, 0.1);
+    }
+
+    footer p {
+      color: #ccc;
+      font-size: 0.9rem;
+      margin: 10px 0;
+    }
+
+    .footer-socials {
+      margin-top: 10px;
+    }
+
+    .footer-socials a {
+      margin: 0 10px;
+      color: #FFD700;
+      font-size: 1.2rem;
+      text-decoration: none;
+      transition: color 0.3s ease;
+    }
+
+    .footer-socials a:hover {
+      color: #ffffff;
+    }
+
+    @media (max-width: 600px) {
+      h1 {
+        font-size: 2rem;
+      }
+
+      p {
+        font-size: 1rem;
+      }
+
+      .footer-socials a {
+        font-size: 1rem;
+      }
+    }
+  </style>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+
+  <div class="container">
+    <h1>Hakkımızda</h1>
+    <p><span class="highlight">ASOS Dijital</span>, markaların dijital dünyada parlamasını sağlayan yaratıcı ve yenilikçi bir reklam ajansıdır.</p>
+    <p>Müşterilerimize sadece hizmet sunmakla kalmıyor, aynı zamanda <span class="highlight">güvenilir iş ortaklıkları</span> kuruyoruz.</p>
+    
+    <div class="cards">
+      <div class="card">
+        <h3>🚀 Vizyonumuz</h3>
+        <p>Dijital dönüşümde öncü olarak, markaların global ölçekte büyümesine katkı sağlamak.</p>
+      </div>
+      <div class="card">
+        <h3>🎯 Misyonumuz</h3>
+        <p>Teknoloji ve yaratıcılığı birleştirerek, etkili ve ölçülebilir reklam çözümleri üretmek.</p>
+      </div>
+      <div class="card">
+        <h3>🤝 Değerlerimiz</h3>
+        <p>Şeffaflık, kalite, sürdürülebilirlik ve müşteri memnuniyeti temel ilkelerimizdir.</p>
+      </div>
+    </div>
+  </div>
+
+    <footer>
+    <p>&copy; 2025 ASOS Dijital. Tüm hakları saklıdır.</p>
+    <div class="footer-socials">
+      <a href="#" title="Instagram"><i class="fab fa-instagram"></i></a>
+      <a href="#" title="Facebook"><i class="fab fa-facebook-f"></i></a>
+      <a href="#" title="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+      <a href="#" title="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+    </div>
+  </footer>
+
+</body>
+</html>
