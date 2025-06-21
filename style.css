@@ -195,21 +195,6 @@ footer {
   font-size: 20px;
   font-weight: bold;
 }
-
-.whatsapp-button, .instagram-button {
-  display: inline-block;
-  padding: 12px 20px;
-  margin: 10px;
-  color: #333333;
-  background-color: #25D366; /* WhatsApp yeşili */
-  text-decoration: none;
-  border-radius: 8px;
-  font-weight: bold;
-}
-
-.instagram-button {
-  background-color: #C13584; /* Instagram mor-pembe */
-}
     .container {
       max-width: 1200px;
       margin: auto;
@@ -327,3 +312,17 @@ footer {
     .stat-box:hover{
       background-color: gray;
     }
+      .iletisim a {
+display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 50px;
+  height: 50px;
+  margin: 10px;
+  font-size: 28px; /* İKON BOYUTU */
+  color: white;
+  background-color: #333; /* İsteğe göre değiştir */
+  border-radius: 50%;
+  transition: 0.3s ease;
+  text-decoration: none;
+      }
