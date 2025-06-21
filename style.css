@@ -312,17 +312,22 @@ footer {
     .stat-box:hover{
       background-color: gray;
     }
-      .iletisim a {
-display: inline-flex;
-  justify-content: center;
-  align-items: center;
-  width: 50px;
-  height: 50px;
-  margin: 10px;
-  font-size: 28px; /* İKON BOYUTU */
-  color: white;
-  background-color: #333; /* İsteğe göre değiştir */
-  border-radius: 50%;
-  transition: 0.3s ease;
-  text-decoration: none;
-      }
+  .social-icon {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 60px;
+    height: 60px;
+    margin: 10px;
+    font-size: 32px;
+    color: white;
+    background-color: #222;
+    border-radius: 50%;
+    text-decoration: none;
+    transition: transform 0.3s, background-color 0.3s;
+  }
+
+  .social-icon:hover {
+    transform: scale(1.2);
+    background-color: #555;
+  }
